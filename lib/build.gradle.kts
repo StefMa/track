@@ -16,6 +16,7 @@ kotlin {
         publishLibraryVariants("release")
         compilations.all { kotlinOptions.jvmTarget = Versions.jvmTarget }
     }
+    iosX64()
     sourceSets {
         val commonMain by getting
         val commonTest by getting {
